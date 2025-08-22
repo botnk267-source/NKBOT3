@@ -31,47 +31,32 @@ module.exports.run = async function({ api, event }) {
     if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
         api.changeNickname(`[ ${global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? " " : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
         const fs = require("fs");
-        return api.sendMessage("", event.threadID, () => api.sendMessage({body: `🍒💙•••Ɓ❍ʈ Ƈøɳɳɛƈʈɛɗ•••💞🌿
-        
-🕊️🌸...Ɦɛɭɭ❍ Ɠɣus Ɱɣ Ɲɑɱɛ Is 🍒💙•••✦𝘽𝙤𝙩✦•••💞🌿
+        return api.sendMessage("", event.threadID, () => api.sendMessage({body: `𝗛𝗘𝗟𝗟𝗢 𝗗𝗢𝗦𝗧𝗢 𝗠𝗘 𝗔𝗔 𝗚𝗬𝗔 【𝗡𝗞 𝗕𝗢𝗧】
+𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗞𝗥𝗢 𝗠𝗘𝗥𝗥𝗔𝗔 𝗢𝗥 𝗠𝗘𝗥𝗘 𝗕𝗢𝗦𝗦
+𝗞𝗢 𝗥𝗘𝗤𝗨𝗦𝗧 𝗦𝗘𝗡𝗗 𝗞𝗥𝗢 
+\n\n🌹💚✨═════••●●═════🌸🌺\n\n
+         ╔═.✵.════ 🌺═══════╗
+         👉 𝗛𝗘𝗟𝗣 𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗟𝗜𝗡𝗞👈
+         ╚═══════ 🌺════.✵.═╝
+ 𝗙𝗕 𝗟𝗜𝗡𝗞:☞ https://www.facebook.com/profile.php?id=61577417285926
+ 
+𝗜𝗡𝗦𝗧𝗔 𝗟𝗜𝗡𝗞:☞ https://www.instagram.com/nk_lovely_143_1?igsh=OXY4eDBsbzEzMnVr
 
+𝗛𝗘𝗟𝗣𝗜𝗡𝗚 𝗭𝗢𝗡𝗘 : ☞ https://chat.whatsapp.com/JXr5wXNRpTy2883NqBXIsC
+\n\n🌹💚✨═════••●●═════🌸🌺\n\n
+𝑻𝒀𝑷 .𝑯𝑬𝑳𝑷 𝑺𝑬𝑬 𝑨𝑳𝑳 𝑪𝑶𝑴𝑴𝑨𝑫
+𝑻𝒀𝑷 𝑰𝑵𝑭𝑶 𝑨𝑵𝑫 𝑶𝑾𝑵𝑬𝑬 𝑨𝑫𝑴𝑰𝑵 
+𝑷𝑹𝑬𝑭𝑰𝑿 ☞ . ☜
+\n\n🌹💚✨═════••●●═════🌸🌺\n\n
 
+𝗽𝗿𝗲𝗳𝗶𝘅 => 👉 .{global.config.PREFIX} 👈
 
+\n\n🌹💚✨═════••●●═════🌸🌺\n\n
 
- ✨💞Ɱɣ Ꭾɽɛfɪᵡ ɪs / 
+𝑊𝑂𝑅𝑁𝐼𝐺:👇👇
 
-
-\n\nƬɣƥɛ${global.config.PREFIX}ꞪɛɭᎮ Ƭ❍ søø Ɱɣ Ƈøɱɱɑɳɗ ɭɪsʈ...🤍💫\n
-\nƐxɑɱƥɭɛ :\n
-
-${global.config.PREFIX}Sɧɑɣɽɪ..💜(Ƭɛxʈ)\n${global.config.PREFIX} (Ƥɧøʈø)🌬️🌳🌊
-
-🦋🌸Ƭɣƥɛ${global.config.PREFIX}Ɦɛɭƥ2 (Ɑɭɭ Ƈøɱɱɑɳɗʂ)...☃️💌
-
-${global.config.PREFIX} ɪɳfø (ɑɗɱɪɳ Iɳføɽɱɑʈɪøɳ)👀✍️
-...🍫🥀Ɱɣ ❍wɳɛɽ ɪs Ɱɽ ℙ𝕣𝕚𝕪𝕒𝕟𝕤𝕙...🕊️☃️
-
-${global.config.PREFIX}🌺🍃Ƈɑɭɭɑɗ føɽ Ɑɳɣ ɪʂʂuɛ 
-<<<<<------------------------------>>>>>
-A̸N̸D̸ F̸O̸R̸ A̸N̸Y̸ R̸E̸P̸O̸R̸T̸ O̸R̸ C̸O̸N̸T̸A̸C̸T̸ B̸O̸T̸ D̸E̸V̸A̸L̸O̸P̸A̸R̸....💙🍫
-
-💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞𝕻𝖗𝖎𝖞𝖆𝖓𝖘𝖍 𝕽𝖆𝖏𝖕𝖚𝖙☜ 💫\n🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 ℙ𝕣𝕚𝕪𝕒𝕟𝕤𝕙🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞ www.facebook.com/priyanshu.rajput.official\n
-👋For Any Kind Of Help Contact On Telegram  Username 👉 @Priyanshrajput😇 
-
-
-✮☸✮
-✮┼💞┼✮
-☸🕊️━━•🌸•━━🕊️☸
-✮☸✮
-✮┼🍫┼✮
-☸🎀━━•🧸•━━🎀☸
-✮┼🦢┼✮
-✮☸✮
-☸🌈━━•🤍•━━🌈☸
-✮☸✮
-✮┼❄️┼✮
-
-┏━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┓🌸✦✧✧✧✧✰🍒ℙ𝕣𝕚𝕪𝕒𝕟𝕤𝕙🌿✰✧✧✧✧✦🌸  ┗━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┛
+𝑩𝑶𝑻 𝑲𝑶 𝑲𝑶𝑰 𝑮𝑨𝑳𝑰 𝑵𝑯𝑰 𝑫𝑬𝑮𝑨 
+𝑵𝑨 𝑶𝑾𝑵𝑬𝑬 𝑲𝑶 𝑼𝑳𝑻𝑨 𝑺𝑰𝑫𝑯𝑨 𝑩𝑶𝑳𝑬𝑮𝑨 𝑨𝑮𝑨𝑹 𝑨𝑰𝑺𝑨 𝑯𝑼𝑨  𝑻𝑶. 𝑩𝑶𝑻 𝑲𝑨 𝑺𝑨𝑹𝑾𝑨𝑹 𝑶𝑵 𝑯𝑶 𝑱𝑨𝒀𝑮𝑨  𝑫𝑯𝑨𝑵𝒀𝑾𝑨𝑫 💜👈
 `, attachment: fs.createReadStream(__dirname + "/cache/botjoin.mp4")} ,threadID));
     }
     else {
@@ -93,7 +78,7 @@ A̸N̸D̸ F̸O̸R̸ A̸N̸Y̸ R̸E̸P̸O̸R̸T̸ O̸R̸ C̸O̸N̸T̸A̸C̸T̸ B�
             }
             memLength.sort((a, b) => a - b);
             
-            (typeof threadData.customJoin == "undefined") ? msg = "Hello Mr/Miss {name},\n─────────────────\n You're The {soThanhVien}Member ─────────────────\nOf {threadName} Group\n─────────────────\nPlease Enjoy Your Stay\n─────────────────\nAnd Make Lots Of Friends =)\n──────-°°__𝗧𝗿𝘂𝘀𝘁 𝗺e 🔐 °__!!>☁️✨❤️ My Owner  ✦͙͙͙͙❥⃝∗⁎.ʚ Priyansh Rajput ɞ.⁎∗❥⃝**͙✦͙͙͙ ❤️ Love you 😘 ummmma ❤️😍" : msg = threadData.customJoin;
+            (typeof threadData.customJoin == "undefined") ? msg = "╔═━━━━✦🖤✦━━━━═╗  \n\n   🌺          𝑵𝑲 𝑩𝑶𝑻            🌺 \n\n ╚═━━━━✦🖤✦━━━━═╝ \n\n🌹💚✨═════••●●═════🌸🌺\n\n ┏━━━━━✦❘༻༺❘✦━━━━━┓\n\n 🚩        𝑹𝒂𝒎 𝑹𝒂𝒎 𝑱𝒊              🚩\n\n ┗━━━━━✦❘༻༺❘✦━━━━━┛ \n\n🌹💚✨═════••●●═════🌸🌺\n\n ┏━━━━━✦❘༻༺❘✦━━━━━┓  \n\n 🌸             {name}                 🌸 \n\n┗━━━━━✦❘༻༺❘✦━━━━━┛  \n\n🌸 Swagat hai aapka hamare group me 🌸 \n\n ⚡ Yaha sab apna hai, bas respect banaye rakho ⚡  \n\n🥳 Enjoy & Stay Connected With Us 🥳 \n\n🌹💚✨═════••●●═════🌸🌺\n\n 𝗬𝗢𝗨 𝗔𝗥𝗘 𝗧𝗛𝗘 『 {soThanhVien} 』 𝗠𝗘𝗠𝗕𝗘𝗥 𝗢𝗙    〈✶ {threadName} ✶〉 𝗚𝗥𝗢𝗨𝗣 😇  \n\n🌹💚✨═════••●●═════🌸🌺\n\n 𝗜𝗙 𝗨𝗦𝗘 𝗠𝗘𝗦𝗦𝗘𝗡𝗚𝗘𝗥 𝗖𝗛𝗔𝗧𝗕𝗢𝗧😜𝑶𝑭 𝑼𝑺𝑬 𝑴𝑬𝑺𝑺𝑬𝑵𝑬𝑬 𝑪𝑯𝑨𝑻𝑩𝑶𝑻  ☆》ᗷOƬ 𝑷𝑹𝑬𝑭𝑰𝑿 👉.👈 𝑻𝒀𝑷 𝑯𝑬𝑳𝑷 𝑺𝑬𝑬 𝑨𝑳𝑳 𝑪𝑶𝑴𝑴𝑨𝑵𝑫 \n\n🌹💚🌺═════●●••═════✨💚🌹 \n\n 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👑➪🦋⃟⃟ ⍣⃝ 𝑵𝑲➺𝑬𝑫𝑰𝑻𝑶𝑹༆𓆪⃟⍨⃝🖤. ;
             msg = msg
             .replace(/\{name}/g, nameArray.join(', '))
             .replace(/\{type}/g, (memLength.length > 1) ?  'Friends' : 'Friend')
