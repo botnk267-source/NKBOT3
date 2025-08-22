@@ -82,7 +82,6 @@ module.exports = {
       api.setMessageReaction("✅", event.messageID, () => {}, true);
 
       await api.sendMessage( 
-event.threadID, event.messageID);
         {
           attachment: fs.createReadStream(downloadPath),
           body: `🖤 Title: ${topResult.title}\n\n Here is your ${
