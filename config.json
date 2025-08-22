@@ -13,16 +13,16 @@
     "eventDisabled": [
         "join.js"
     ],
-    "EMAIL": "",
+    "EMAIL": "niteshk34937@gmail.com",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "Your-Father",
-    "PREFIX": "/",
+    "BOTNAME": "『🪻𓆩༈꯭ 🩷𝐍Ҡ➺ᗸØ⏉🩵 ꯭༈꯭𓆪🪻 』",
+    "PREFIX": ".",
     "ADMINBOT": [
-        "100037743553265"
+        "61577417285926"
     ],
     "NDH": [
-        "100037743553265"
+        "61577417285926"
     ],
     "DATABASE": {
         "sqlite": {
