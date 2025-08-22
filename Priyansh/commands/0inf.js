@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "info",
 	version: "1.0.1", 
 	hasPermssion: 0,
-	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+	credits: "NK EDITOR BOT",
 	description: "Admin and Bot info.",
 	commandCategory: "...",
 	cooldowns: 1,
@@ -24,39 +24,44 @@ const time = process.uptime(),
 const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【HH:mm:ss】");
 var link =                                     
-["https://i.imgur.com/eDbdlvd.jpg"];
-var callback = () => api.sendMessage({body:` ╾━╤デ╦︻(▀̿Ĺ̯▀̿ ̿)🇮🇳 𝐀𝐃𝐌𝐈𝐍 𝐀𝐍𝐃 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍 🇮🇳 
-(⌐▀͡ ̯ʖ▀)︻̷┻̿═━一-
+["https://i.ibb.co/DDkk6qCv/IMG-20250804-WA0735.jpg"];
+var callback = () => api.sendMessage({body:`
+╔════◇🌀◇════╗
+   💎 𝐁𝐎𝐓 ＩＮＦＯ 💎
+╚════◇🌀◇════╝
 
-☄️Bot Name︎︎︎☄️  ${global.config.BOTNAME}
-
-🔥Bot Admin🔥☞︎︎︎☜︎︎︎✰ ℙ𝕣𝕚𝕪𝕒𝕟𝕤𝕙💔🥀
-
-🙈bot andmin owner facebook id link🙈➪ www.facebook.com/priyanshu.rajput.official 💞🕊️
-
-👋For Any Kind Of Help Contact On Telegram  Username 👉 @Priyanshrajput😇
-
-✧══════•❁❀❁•══════✧
-
-🌸Bot Prefix🌸☞︎︎︎☜︎︎︎✰ ${global.config.PREFIX}
-
-♥️Bot Owner♥️ ☞︎︎︎☜︎︎︎✰ 𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭
-
-🥳UPTIME🥳
-
-🌪️Today is🌪️ ☞︎︎︎☜︎︎︎✰ ${juswa} 
-
-⚡Bot is running⚡ ${hours}:${minutes}:${seconds}.
-
-✅Thanks for using ${global.config.BOTNAME} Bot🖤
+🤖 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 ➤ ${global.config.BOTNAME} ⚡
+👑 𝙊𝙬𝙣𝙚𝙧 ➤ 𝑵𝑲 𝑬𝑫𝑰𝑻𝑶𝑹 👑🔥
+🎭 𝘼𝙠𝙖 ➤ 𝕋𝕙𝕖 𝕂𝕚𝕟𝕘 𝕆𝕗 𝔹𝕠𝕥𝕤 ✨
+╭───────────༺🌸༻───────────╮
+             💜    👇 𝑹𝒆𝒍𝒂𝒕𝒊𝒐𝒏𝒔𝒉𝒊𝒑. 👇💙
+╰───────────༺🌸༻───────────╯
 
 
-🦢🍒•••ꞪɛᏒɛ ɪʂ ɮ❍┼ ❍ωɳɜɽ ɳaʍɜ•••🌷💞
-┏━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┓
-🌸✦✧✧✧✧✰🍒ℙ𝕣𝕚𝕪𝕒𝕟𝕤𝕙🌿✰✧✧✧✧✦🌸
-┗━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┛
+❤️ 𝐍𝐊 𝐄𝐃𝐈𝐓𝐎𝐑 💞 + 💖 𝐍𝐢𝐡𝐚𝐫𝐢𝐤𝐚 𝐒𝐢𝐧𝐠𝐡 💖
+🌹 𝑭𝒐𝒓𝒆𝒗𝒆𝒓 𝑻𝒐𝒈𝒆𝒕𝒉𝒆𝒓 🌹
 
+
+
+🚩 Jai Shree Ram 🚩
+╭━━━━━━━✦✗✦━━━━━━━╮
+🌐 𝐒𝐎𝐂𝐈𝐀𝐋 𝐌𝐄𝐃𝐈𝐀 🔗
+╰━━━━━━━✦✗✦━━━━━━━╯
+📘 Facebook ➤   https://www.facebook.com/share/1MhzLsBVRY/
+📸 Instagram ➤  https://www.instagram.com/nk_lovely_143_1?igsh=OXY4eDBsbzEzMnVr
+📡 Telegram ➤  t.me/NK2650
+
+╭━━━━━━━✦✗✦━━━━━━━╮
+📅 𝐓𝐨𝐝𝐚𝐲 ➤ ${juswa}  
+⏳ 𝐔𝐩𝐭𝐢𝐦𝐞 ➤ ${hours}:${minutes}:${seconds}  
+╰━━━━━━━✦✗✦━━━━━━━╯
+
+💠 𝐏𝐑𝐄𝐅𝐈𝐗 ➤ ${global.config.PREFIX}  
+⚡ 𝐒𝐓𝐀𝐓𝐔𝐒 ➤ ✅ RUNNING WITHOUT LIMITS 🚀🔥
+
+🎀 Thanks For Using ${global.config.BOTNAME} 🎀
 
 `,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
    };
+   
