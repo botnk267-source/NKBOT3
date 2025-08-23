@@ -1,12 +1,12 @@
 const fs = require("fs");
 module.exports.config = {
-	name: "priyansh",
+	name: "Nk",
   version: "1.0.1",
 	hasPermssion: 0,
 	credits: "𝙋𝙧𝙞𝙮𝙖𝙣𝙨𝙝 𝙍𝙖𝙟𝙥𝙪𝙩", 
 	description: "hihihihi",
 	commandCategory: "no prefix",
-	usages: "priyansh",
+	usages: "Nk",
     cooldowns: 5, 
 };
 
@@ -19,10 +19,10 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL })
     }
 
 	var { threadID, messageID } = event;
-	if (event.body.indexOf("@Priyansh Rajput")==0 || event.body.indexOf("@𝐓ɽ͜͡𝐮𝐬ʈ 𝐌̽𝐞 𝐁𝐚͜͡𝐛ɣ̈̈›› 𝐈 𝐖ɪ̽ɭɭ ဗီူံ ๛⃝𓆩𝐁ɽ͜͡𝐞̽ɑ̽𝐤 𝐘ǿ𝐮̽ɾ 𝐇𝐞̽𝐚͜͡𝐫ʈﮩﮩــﮩــــ𓆩  𓆪〘̶𑁍 〘̶𑁍𓆩⃝P̶R̶I̶Y̶A̶N̶S̶H̶𓆪 † 』𓆩๏̬̬̬̬̬̬𓆪†『٭𝐱͜͡⃝ᴆ』†٭❯")==0 || event.body.indexOf("@Prîyánsh Rajpût")==0 || event.body.indexOf("Priyansh")==0) {
+	if (event.body.indexOf("NK")==0 || event.body.indexOf("@▂ｯﾃ⌥✪╤╤━───╼ 🩷🪿🪽 🄳🄷🄾🄺🄰🩷🫨😈🄱🄰🄰🅉🩵🩷🍷")==0 || event.body.indexOf("@Prîyánsh Rajpût")==0 || event.body.indexOf("Priyansh")==0) {
 		var msg = {
-				body: "Prîyansh ✨💖🥀",
-				attachment: fs.createReadStream(__dirname + `/noprefix/Priyansh.png`)
+				body: "🌺 𝗢𝗪𝗡𝗘𝗥 👑➪🦋⃟⃟ ⍣⃝ 𝑵𝑲➺𝑬𝑫𝑰𝑻𝑶𝑹༆𓆪⃟⍨⃝🖤",
+				attachment: fs.createReadStream(__dirname + `/noprefix/https://i.ibb.co/DDkk6qCv/IMG-20250804-WA0735.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("💔", event.messageID, (err) => {}, true)
