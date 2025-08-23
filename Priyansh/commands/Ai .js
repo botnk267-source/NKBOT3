@@ -1,34 +1,53 @@
 const axios = require("axios");
 
 module.exports.config = {
-  name: "ai",
-  version: "1.0.0",
+  name: "flash",
+  version: "1.0.1",
   hasPermssion: 0,
   credits: "Aman Khan",
-  description: "Google Gemini AI",
+  description: "Google Gemini Flash 2.0 AI",
   commandCategory: "ai",
   usages: "[question]",
   cooldowns: 5
 };
 
-module.exports.run = async function({ api, event, args }) {
+//don't change credit fb contact AK47XK 
+module.exports.run = async function ({ api, event, args }) {
   const question = args.join(" ");
-  if (!question) return api.sendMessage("❌ Kuch pucho!", event.threadID, event.messageID);
+  if (!question) {
+    return api.sendMessage("❌ Kuch puchna to likho!", event.threadID, event.messageID);
+  }
 
   try {
-    const response = await axios.post("https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent", {
-      contents: [{parts: [{text: question}]}]
-    }, {
-      headers: {
-        'Content-Type': 'application/json',
-        'x-goog-api-key': 'AIzaSyAldTUrYtxliE6YonWwixUd5lYpljepqGY'
+    const response = await axios.post(
+      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
+      {
+        contents: [
+          {
+            parts: [{ text: question }]
+          }
+        ]
+      },
+      {
+        headers: {
+          "Content-Type": "application/json",
+          "x-goog-api-key": "AIzaSyAldTUrYtxliE6YonWwixUd5lYpljepqGY"
+        }
       }
-    });
+    );
 
-    const answer = response.data.candidates[0].content.parts[0].text;
-    api.sendMessage(`🔷 Gemini:\n\n${answer}`, event.threadID, event.messageID);
+    // Response parse karna safe way se
+    let answer = "❌ Flash se koi reply nahi mila.";
+    if (response.data?.candidates?.[0]?.content?.parts) {
+      answer = response.data.candidates[0].content.parts
+        .map(p => p.text || "")
+        .join("\n");
+    }
+
+    //auther Aman Khan change name reply 
+    api.sendMessage(`⚡ Ai reply:\n\n${answer}`, event.threadID, event.messageID);
   } catch (error) {
-    console.error(error);
-    api.sendMessage("❌ Gemini error!", event.threadID, event.messageID);
+    console.error(error.response?.data || error.message);
+    api.sendMessage("❌ Flash error!", event.threadID, event.messageID);
   }
 };
