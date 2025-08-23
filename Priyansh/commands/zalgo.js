@@ -12,5 +12,5 @@ module.exports.config = {
 
 module.exports.run = ({ api, event, args }) => {
   const Zalgo = require("to-zalgo");
-  return api.sendMessage(Zalgo(args.join(" ")), event.threadID, event.messageID);
+  return api.sendMessage(Zalgo(args.join(" hii")), event.threadID, event.messageID);
 }
