@@ -31,32 +31,7 @@ module.exports.run = async function({ api, event }) {
     if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
         api.changeNickname(`[ ${global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? " " : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
         const fs = require("fs");
-        return api.sendMessage("", event.threadID, () => api.sendMessage({body: `𝗛𝗘𝗟𝗟𝗢 𝗗𝗢𝗦𝗧𝗢 𝗠𝗘 𝗔𝗔 𝗚𝗬𝗔 【𝗡𝗞 𝗕𝗢𝗧】
-𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗞𝗥𝗢 𝗠𝗘𝗥𝗥𝗔𝗔 𝗢𝗥 𝗠𝗘𝗥𝗘 𝗕𝗢𝗦𝗦
-𝗞𝗢 𝗥𝗘𝗤𝗨𝗦𝗧 𝗦𝗘𝗡𝗗 𝗞𝗥𝗢 
-\n\n🌹💚✨═════••●●═════🌸🌺\n\n
-         ╔═.✵.════ 🌺═══════╗
-         👉 𝗛𝗘𝗟𝗣 𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗟𝗜𝗡𝗞👈
-         ╚═══════ 🌺════.✵.═╝
- 𝗙𝗕 𝗟𝗜𝗡𝗞:☞ https://www.facebook.com/profile.php?id=61577417285926
- 
-𝗜𝗡𝗦𝗧𝗔 𝗟𝗜𝗡𝗞:☞ https://www.instagram.com/nk_lovely_143_1?igsh=OXY4eDBsbzEzMnVr
-
-𝗛𝗘𝗟𝗣𝗜𝗡𝗚 𝗭𝗢𝗡𝗘 : ☞ https://chat.whatsapp.com/JXr5wXNRpTy2883NqBXIsC
-\n\n🌹💚✨═════••●●═════🌸🌺\n\n
-𝑻𝒀𝑷 .𝑯𝑬𝑳𝑷 𝑺𝑬𝑬 𝑨𝑳𝑳 𝑪𝑶𝑴𝑴𝑨𝑫
-𝑻𝒀𝑷 𝑰𝑵𝑭𝑶 𝑨𝑵𝑫 𝑶𝑾𝑵𝑬𝑬 𝑨𝑫𝑴𝑰𝑵 
-𝑷𝑹𝑬𝑭𝑰𝑿 ☞ . ☜
-\n\n🌹💚✨═════••●●═════🌸🌺\n\n
-
-𝗽𝗿𝗲𝗳𝗶𝘅 => 👉 .{global.config.PREFIX} 👈
-
-\n\n🌹💚✨═════••●●═════🌸🌺\n\n
-
-𝑊𝑂𝑅𝑁𝐼𝐺:👇👇
-
-𝑩𝑶𝑻 𝑲𝑶 𝑲𝑶𝑰 𝑮𝑨𝑳𝑰 𝑵𝑯𝑰 𝑫𝑬𝑮𝑨 
-𝑵𝑨 𝑶𝑾𝑵𝑬𝑬 𝑲𝑶 𝑼𝑳𝑻𝑨 𝑺𝑰𝑫𝑯𝑨 𝑩𝑶𝑳𝑬𝑮𝑨 𝑨𝑮𝑨𝑹 𝑨𝑰𝑺𝑨 𝑯𝑼𝑨  𝑻𝑶. 𝑩𝑶𝑻 𝑲𝑨 𝑺𝑨𝑹𝑾𝑨𝑹 𝑶𝑵 𝑯𝑶 𝑱𝑨𝒀𝑮𝑨  𝑫𝑯𝑨𝑵𝒀𝑾𝑨𝑫 💜👈
+        return api.sendMessage("", event.threadID, () => api.sendMessage({body: `𝗛𝗘𝗟𝗟𝗢 𝗗𝗢𝗦𝗧𝗢 𝗠𝗘 𝗔𝗔 𝗚𝗬𝗔 【𝗡𝗞 𝗕𝗢𝗧】𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗞𝗥𝗢 𝗠𝗘𝗥𝗥𝗔𝗔 𝗢𝗥 𝗠𝗘𝗥𝗘 𝗕𝗢𝗦𝗦 𝗞𝗢 𝗥𝗘𝗤𝗨𝗦𝗧 𝗦𝗘𝗡𝗗 𝗞𝗥𝗢 \n\n🌹💚✨═════••●●═════🌸🌺\n\n ╔═.✵.════ 🌺═══════╗\n\n 👉 𝗛𝗘𝗟𝗣 𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗟𝗜𝗡𝗞👈\n\n ╚═══════ 🌺════.✵.═╝\n\n 𝗙𝗕 𝗟𝗜𝗡𝗞:☞ https://www.facebook.com/profile.php?id=61577417285926\n\n𝗜𝗡𝗦𝗧𝗔 𝗟𝗜𝗡𝗞:☞ https://www.instagram.com/nk_lovely_143_1?igsh=OXY4eDBsbzEzMnVr\n\n𝗛𝗘𝗟𝗣𝗜𝗡𝗚 𝗭𝗢𝗡𝗘 : ☞ https://chat.whatsapp.com/JXr5wXNRpTy2883NqBXIsC\n\n🌹💚✨═════••●●═════🌸🌺\n\n𝑻𝒀𝑷 .𝑯𝑬𝑳𝑷 𝑺𝑬𝑬 𝑨𝑳𝑳 𝑪𝑶𝑴𝑴𝑨𝑫 \n\n𝑻𝒀𝑷 𝑰𝑵𝑭𝑶 𝑨𝑵𝑫 𝑶𝑾𝑵𝑬𝑬 𝑨𝑫𝑴𝑰𝑵 \n\n𝑷𝑹𝑬𝑭𝑰𝑿 ☞ . ☜\n\n🌹💚✨═════••●●═════🌸🌺\n\n𝗽𝗿𝗲𝗳𝗶𝘅 => 👉 .{global.config.PREFIX} 👈\n\n🌹💚✨═════••●●═════🌸🌺\n\n𝑊𝑂𝑅𝑁𝐼𝐺:👇👇\n\n𝑩𝑶𝑻 𝑲𝑶 𝑲𝑶𝑰 𝑮𝑨𝑳𝑰 𝑵𝑯𝑰 𝑫𝑬𝑮𝑨 \n\n𝑵𝑨 𝑶𝑾𝑵𝑬𝑬 𝑲𝑶 𝑼𝑳𝑻𝑨 𝑺𝑰𝑫𝑯𝑨 𝑩𝑶𝑳𝑬𝑮𝑨 𝑨𝑮𝑨𝑹 𝑨𝑰𝑺𝑨 𝑯𝑼𝑨  𝑻𝑶. 𝑩𝑶𝑻 𝑲𝑨 𝑺𝑨𝑹𝑾𝑨𝑹 𝑶𝑵 𝑯𝑶 𝑱𝑨𝒀𝑮𝑨  𝑫𝑯𝑨𝑵𝒀𝑾𝑨𝑫 💜👈
 `, attachment: fs.createReadStream(__dirname + "/cache/botjoin.mp4")} ,threadID));
     }
     else {
