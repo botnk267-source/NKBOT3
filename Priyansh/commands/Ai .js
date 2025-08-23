@@ -21,7 +21,7 @@ module.exports.run = async function({ api, event, args }) {
     }, {
       headers: {
         'Content-Type': 'application/json',
-        'x-goog-api-key': 'YOUR_GEMINI_API_KEY'
+        'x-goog-api-key': 'AIzaSyAldTUrYtxliE6YonWwixUd5lYpljepqGY'
       }
     });
 
